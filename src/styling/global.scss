@@ -1,0 +1,78 @@
+$mainColor: #EF476F;
+$secondaryColor: white;
+$grey: #8C8C8C;
+
+$breakpoint-mobile-xs: 320px;
+$breakpoint-mobile-m: 425px;
+$breakpoint-mobile-l: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 992px;
+$breakpoint-laptop-l: 1440px;
+$breakpoint-laptop-xl: 1560px;
+
+@mixin responsive-mobile-2xs {
+    @media (max-width: #{$breakpoint-mobile-xs - 0.5}) {
+        @content;
+    }
+}
+
+@mixin responsive-mobile-xs {
+    @media (min-width: #{$breakpoint-mobile-xs - 0.5}) {
+        @content;
+    }
+}
+
+@mixin responsive-mobile-m {
+    @media (min-width: #{$breakpoint-mobile-m - 0.5}) {
+        @content;
+    }
+}
+
+@mixin responsive-mobile-l {
+    @media (min-width: #{$breakpoint-mobile-l - 0.5}) {
+        @content;
+    }
+}
+
+@mixin responsive-tablet {
+    @media (min-width: #{$breakpoint-tablet - 0.5}) {
+        @content;
+    }
+}
+
+@mixin responsive-laptop {
+    @media (min-width: #{$breakpoint-laptop - 0.5}) {
+        @content;
+    }
+}
+
+@mixin responsive-laptop-l {
+    @media (min-width: #{$breakpoint-laptop-l - 0.5}) {
+        @content;
+    }
+}
+
+@mixin responsive-laptop-xl {
+    @media (min-width: #{$breakpoint-laptop-xl - 0.5}) {
+        @content;
+    }
+}
+
+@mixin custom-brown-scroll {
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+        background-color: #f5f5f5;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar {
+        border-radius: 4px;
+        width: 7px;
+        background-color: $mainColor;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: brown;
+    }
+}

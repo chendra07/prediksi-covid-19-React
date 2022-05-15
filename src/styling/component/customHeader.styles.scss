@@ -1,0 +1,42 @@
+@import "../global.scss";
+
+.custom_header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    align-content: space-between;
+    background-color: $mainColor;
+
+    h1 {
+        padding-top: 20px;
+        flex: 3;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    .image_container {
+        flex: 1;
+        width: 100px;
+        height: 100px;
+        padding-left: 15px;
+        // background-color: gold;
+
+        img {
+            height: 100%;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .button_container {
+        display: flex;
+        flex: 1;
+        // background-color: aqua;
+        justify-content: flex-end;
+        padding-right: 5vw;
+    }
+}

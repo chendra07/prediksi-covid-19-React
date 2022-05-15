@@ -1,0 +1,88 @@
+@import "./global.scss";
+
+.home_page_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .option_container {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        margin: 0px 50px;
+
+        .date_picker_container {
+            flex: 1;
+            display: flex;
+            margin: 20px 40px;
+            // background-color: aquamarine;
+            flex-direction: row;
+            align-items: center;
+
+
+            .date_title {
+                font-size: 25px;
+                color: grey;
+                padding-right: 20px;
+                justify-content: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                // text-align: center;
+            }
+
+            .refresh_icon {
+                font-size: 40px;
+                padding-left: 25px;
+                color: grey;
+                cursor: pointer;
+            }
+        }
+
+        .level_ppkm {
+            flex: 1;
+            margin: 20px;
+            // background-color: aquamarine;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 25px;
+            color: grey;
+            text-align: center;
+        }
+    }
+
+    .tabs_container {
+        flex: 9;
+        flex-direction: column;
+        // background-color: aquamarine;
+        margin: 40px;
+
+        .ant-tabs-ink-bar {
+            background-color: #e94747;
+        }
+
+        .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+            color: #e94747;
+        }
+
+        .ant-tabs-top>.ant-tabs-nav::before {
+            border-color: rgb(174, 174, 174);
+            border-width: 1px;
+        }
+
+        // .ant-tabs>.ant-tabs-nav {
+        //     margin-bottom: 0;
+        // }
+
+        // .ant-tabs-content-holder {
+        //     padding: 10px;
+        //     border: 1px solid grey;
+        //     border-top: transparent;
+        // }
+    }
+}
