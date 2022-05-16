@@ -1,7 +1,7 @@
 import React from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
-import moment from "moment";
+import moment from "moment-timezone";
 
 import { dummy } from "../../data/dummy_data";
 
@@ -15,6 +15,19 @@ const CustomChart = ({ dataActual, dataPredicted, title }) => {
     },
     xAxis: {
       type: "datetime",
+      labels: {
+        useHTML: true,
+        formatter: function () {
+          // console.log(
+          //   moment(this.value).tz("Asia/Jakarta").format("YYYY-MM-DD")
+          // );
+          return (
+            "<div>" +
+            moment(this.value).tz("Asia/Jakarta").format("YYYY-MM-DD") +
+            "</div>"
+          );
+        },
+      },
     },
     yAxis: {
       title: {
