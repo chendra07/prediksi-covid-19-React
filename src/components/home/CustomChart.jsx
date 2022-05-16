@@ -23,7 +23,7 @@ const CustomChart = ({ dataActual, dataPredicted, title }) => {
           // );
           return (
             "<div>" +
-            moment(this.value).tz("Asia/Jakarta").format("YYYY-MM-DD") +
+            moment(this.value).tz("Asia/Jakarta").format("DD-MM-YYYY") +
             "</div>"
           );
         },
