@@ -56,7 +56,7 @@ const TabsPositifHarian = () => {
     <div>
       <div className="itemContainer">
         <CustomChart
-          title="Prediksi kasus Positif Harian akibat Covid-19"
+          title="Prediksi kasus Positif Harian akibat Covid-19 di kawasan Jakarta"
           dataActual={positifHarian.length !== 0 ? positifHarian : []}
           dataPredicted={
             positifHarian_prediction.length !== 0

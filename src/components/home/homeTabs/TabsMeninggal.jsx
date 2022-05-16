@@ -59,7 +59,7 @@ const TabsMeninggal = () => {
     <div>
       <div className="itemContainer">
         <CustomChart
-          title="Prediksi kasus Meninggal akibat Covid-19"
+          title="Prediksi kasus Meninggal akibat Covid-19 di kawasan Jakarta"
           dataActual={meninggal.length !== 0 ? meninggal : []}
           dataPredicted={
             meninggal_prediction.length !== 0 ? meninggal_prediction : []
