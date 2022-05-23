@@ -21,7 +21,6 @@ const setPredictionPPKM = (payload) => {
 
 const postPredictionData =
   (request, showLoading, dismissLoading) => (dispatch) => {
-    console.log("masuk fun");
     showLoading && dispatch(showLoading());
     return new Promise((resolve, reject) => {
       const data = {

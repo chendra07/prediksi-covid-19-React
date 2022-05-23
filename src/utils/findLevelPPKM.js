@@ -24,7 +24,7 @@ const findLevelPPKM = (data) => {
 
   let lastWeekData = data.slice(Math.max(data.length - baseDays, 0));
 
-  console.log("lastWeek: ", lastWeekData);
+  // console.log("lastWeek: ", lastWeekData);
 
   lastWeekData.forEach((element) => {
     totalPositifHarian += element.Positif_Harian;
@@ -33,20 +33,17 @@ const findLevelPPKM = (data) => {
 
   totalMeninggal = Math.max(...temp) - Math.min(...temp);
 
-  console.log("max: ", Math.max(...temp));
-  console.log("min: ", Math.min(...temp));
+  // console.log("max: ", Math.max(...temp));
+  // console.log("min: ", Math.min(...temp));
 
-  console.log("Meninggal: ", totalMeninggal);
-  console.log("Positif: ", totalPositifHarian);
+  // console.log("Meninggal: ", totalMeninggal);
+  // console.log("Positif: ", totalPositifHarian);
 
   totalMeninggal = scaleDownData(totalMeninggal, totalPopulasi);
   totalPositifHarian = scaleDownData(totalPositifHarian, totalPopulasi);
 
-  console.log("Meninggal: ", totalMeninggal);
-  console.log("Positif: ", totalPositifHarian);
-
-  //   totalMeninggal = 100;
-  //   totalPositifHarian = 200;
+  // console.log("Meninggal: ", totalMeninggal);
+  // console.log("Positif: ", totalPositifHarian);
 
   if (totalPositifHarian < 20 && totalMeninggal < 1) {
     return " 1 ";
